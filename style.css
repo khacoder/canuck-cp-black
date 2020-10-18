@@ -1,0 +1,192 @@
+/*
+Theme Name:     Canuck CP Black
+Theme URI:      
+Description:    Child theme for the Canuck CP WordPress Theme 
+Author:         Kevin Archibald
+Author URI:     http://kevinsspace.ca/
+Template:       canuck-cp
+Version:        1.0.0
+License:        GNU General Public License v2 or later
+License URI:    https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+*/
+
+/*  ====================== Introduction ============================ 
+ * Your new styles go below this line. Note that this child theme 
+ * does not contain all the styles of the parent. If you need to 
+ * make additional changes, you will need to identify the style you
+ * need. Element inspectors in browsers are a good tool for this.
+ *
+ * Note that this child theme has been styled with black backgrounds
+ * and off white text. The primary and secondary accent colors are 
+ * still set in the options menu. 
+ * 
+ * Also Note that home page sections are not styled here as they 
+ * remain options in customizer for you to set up specifically. 
+ * Other elements are included here to provide you with additional 
+ * flexibilities for changing the main blocks that compose the theme.
+ *
+ * Colors are presented either as either:
+ *  hex color value #000000 -> black for example
+ *  rgba color rgba( 0,0,0,0.5 ) -> black with .5 opacity, 
+ *                               -> 0=transparant, 1= solid
+ *
+ * Also note that any styles you load here should be loaded after all
+ * Canuck CP ( Parent Theme ) styles are loaded.
+ *
+ * Contact the Canuck CP Author if there are any problems.
+ *     https://kevinsspace.ca/contact-me/
+ *
+ * Note that Ihave no problem addressing programming issues with the 
+ * child theme. I will not however get into details on your new theme 
+ * design, I just do not have the time for that.
+ *
+ * Good luck with your site :)
+ * ================================================================= */
+
+/* ===================== General Styles ============================ 
+ * General styles are styles that are really not specific to one area 
+ * of the theme. 
+ * Fonts: 100%=16px, 1em is relative to the parent font setting.
+ * ================================================================= */
+body                           { color: #f7f7f7; font-size: 100%; line-height: 1.5em; }
+h1,h2,h3,h4,h5,h6              { line-height: 1.5em; font-weight: 300; }
+h1                             { font-size: 2.75em; }
+h2                             { font-size: 2.25em; }
+h3                             { font-size: 1.75em; }
+h4                             { font-size: 1.5em; }
+h5                             { font-size: 1.25em; }
+h6                             { font-size: 1.125em; }
+p                              { line-height: 1.5em; }
+blockquote p:before            { color: #f7f7f7; }
+pre                            { border: solid 5px #f7f7f7; color: #f7f7f7; background-color: #757575; }
+code                           { background-color: #757575; color: #f7f7f7; }
+th                             { border: 1px solid #757575; background-color: #000000; color: #f7f7f7; }
+tfoot                          { background-color: #757575; }
+td                             { border: 1px solid #757575; }
+body .scrolltotop              { color: rgba(255,255,255,.3); background-color: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.3); }
+/* ===================== Header Area ================================ 
+ * The header area consists of the top strip, logo, menu and feature
+ * areas for the static home page and the blog page. It includes the
+ * header used on scroll to and in small media styles. 
+ * ================================================================== */
+ /* ---------------------- header background set up ----------------- */
+.header-wide-no-feature,.header-wide-slider                         { background: linear-gradient( #000000,#111111 ); }
+/* ---------------------- sticky header ---------------------------- */
+body.sticky .header-wide-no-feature,body.sticky .header-wide-slider { background: linear-gradient( #212121,#111111 );  border-bottom: 1px solid #000000; }
+body.sticky .header-wide-image                                      { background-color: #000000; border-bottom: 1px solid #212121; }
+body.sticky .header-logo-menu-strip nav                             { color:  #f7f7f7; }
+body.sticky .header-logo-menu-strip nav a                           { color:  #f7f7f7; }
+/* ---------------------- Top Strip -------------------------------- */
+.header-wide-no-feature .header-topstrip-wide,
+.header-wide-slider .header-topstrip-wide                           { background: linear-gradient( #212121,#111111 ); }
+.header-wide-image .header-topstrip-wide                            { background-color: rgba(0,0,0,.5); }
+.header-wide-no-feature .header-topstrip-left,
+.header-wide-slider .header-topstrip-left                           { color: #f7f7f7; }
+.header-wide-no-feature .header-topstrip-left svg path,
+.header-wide-slider .header-topstrip-left svg path                  { fill: #f7f7f7; }
+.header-wide-image .header-topstrip-left                            { color: #eaeaea; }
+.header-wide-image .header-topstrip-left a                          { color: #7f7f7f; }
+.header-topstrip-left a svg path                                    { fill: #f7f7f7; transition: .75s ease; }
+.header-topstrip-right a svg path                                   { fill: #f7f7f7; transition: .75s ease; }
+.canuck-cp-show-search-trigger:hover svg path,
+.canuck-cp-show-search-trigger a:focus svg path                     { fill: #ffffff; }
+.canuck-cp-search .searchform .search-field                         { color: #ffffff; }
+.header-topstrip-right a svg path                                   { fill: #ffffff; transition: .75s ease; }
+.canuck-cp-show-search-trigger:hover svg path,
+.canuck-cp-show-search-trigger a:focus svg path                     { fill: #ffffff; }
+.canuck-cp-search .searchform .search-field                         { color: #ffffff; }
+.canuck-cp-search-icon-form svg path                                { fill: #f7f7f7; }
+/* ---------------------- Menu ------------------------------------- */
+.header-wide-no-feature .header-logo-menu-strip nav a,
+.header-wide-slider .header-logo-menu-strip nav a                   { color: #f7f7f7; }
+.header-wide-image .header-logo-menu-strip nav a                    { color: #f7f7f7; }
+button.sidebar-a-toggle, button.sidebar-b-toggle                    { color: rgba(255,255,255,.6); background-color: rgba(0,0,0,0.3); border: 1px solid #ffffff; }
+button.sidebar-a-toggle:hover, button.sidebar-b-toggle:hover        { color: #33f778; }
+/* ===================== Page Titles =============================== 
+ * The Page Title styles can be styled separately. 
+ * ================================================================= */
+#page-title-wide { background: linear-gradient( #111111,#212121 ); }
+/* ===================== Content Area ============================== 
+ * The content areas are between the header and the footer. There 
+ * are many differetnt content areas. Note that the static home page
+ * built with the page builder is not included here because it is 
+ * adequately handled in Appearance->Customizer->Canuck Home Page 
+ * ================================================================= */
+/* -------------------- Layouts ------------------------------------ */
+/* static Home Page - probably best to just leave these alone :) */
+#main-section-home          { background-color: rgba(255,255,255,0); }
+#content-wrap-home          { background-color: rgba(255,255,255,0); }
+#fullwidth-home             { background-color: rgba(255,255,255,0); }
+/* Main section wrapper, change background-color: #FFFFFF; to 
+ * to background-color: rgba(255,255,255,0); to remove the white background */
+#main-section               { background-color: #212121; }
+#content-wrap               { background-color: #212121; }
+#fullwidth                  {  background-color: rgba(255,255,255,0); }
+/* two column layouts */
+#two-column-sidebar-left    { background-color: #212121; }
+#two-column-sidebar-right   { background-color: #212121; }
+/* three column layouts */
+#three-column-sidebar-left  { background-color: #212121; color: #f7f7f7; }
+#three-column-sidebar-right { background-color: #212121; color: #f7f7f7; }
+/* --------------------- Sidebars ---------------------------------- */
+.widget select { background-color: #ffffff; border: 1px solid #474747; color: #474747; }
+/* ===================== Footer ==================================== 
+ * The footer consists of a top strip, main footer and copyright 
+ * strip. These styles are set in Canuck CP Options.
+ * ================================================================= */
+/* ================== Portfolio Page Styles ======================= 
+ * Not much to change here.
+ * ================================================================= */
+.masonry-gallery { background-color: #212121; }
+/* ========================== Post Styles ========================== 
+ * These styles affect the colors of text and backgrounds for 
+ * different post elements.
+ * ================================================================= */
+/* read more */
+.read-more-wrap a.read-more                                     { background-color: #212121; color: #f7f7f7; }
+.pmeta-timestamp i svg path,.pmeta-author i  svg path,
+.pmeta-post-comments i  svg path,.pmeta-categories i  svg path,
+.pmeta-taglist i  svg path,.pmeta-sticky i svg path,
+.pmeta-edit i  svg path                                         { fill: #f7f7f7; }
+.pmeta-sticky                                                   { color: #f7f7f7; }
+.canuck-cp-share-post                                           { background-color: #212121; }
+.canuck-cp-share-post a.facebook-share .icon-svg-class path     { fill: #f7f7f7; }
+.canuck-cp-share-post a.twitter-share .icon-svg-class path      { fill: #f7f7f7; }
+.canuck-cp-share-post a.facebook-share .icon-svg-class          { background-color: #212121; }
+.canuck-cp-share-post a.twitter-share .icon-svg-class           { background-color: #212121; }
+.canuck-cp-share-page                                           { background-color: #212121; }
+.canuck-cp-share-page a.facebook-share .icon-svg-class path     { fill: #f7f7f7; }
+.canuck-cp-share-page a.twitter-share .icon-svg-class path      { fill: #f7f7f7; }
+.canuck-cp-share-page a.facebook-share .icon-svg-class          { background-color: #212121; }
+.canuck-cp-share-page a.twitter-share .icon-svg-class           { background-color: #212121; }
+/* ===================== Other Elements ============================ 
+ * 
+ * ================================================================= */
+/* Feature Styles */
+.feature-wrap-full,#feature-slider-wrap { background-color: #111111; }
+.tagcloud a { background-color: #212121; border: 1px solid #eaeaea; }
+.tagcloud a:hover,
+.sitemap-categories-wrap a:hover,
+.sitemap-tags-wrap a:hover { background-color: #212121; }
+.widget_search .searchform .canuck-cp-search-icon-form { background-color: #212121; border: none; }
+#wp-calendar thead th { background-color: #333333; }
+#canuck-cp-footer #wp-calendar thead th { background-color: #333333; }
+#calendar_wrap td#today { background-color: #333333; }
+#canuck-cp-footer #calendar_wrap td#today { background-color: #333333; }
+/* Masonry Styles */
+.masonry-grid-item .masonry-image-overlay { background-color:  rgba( 50,204,255,0.8 ); color: rgba(255,255,255,0); }
+.masonry-grid-item .masonry-image-overlay a { color: rgba(255,255,255,0); }
+.masonry-grid-item:hover .masonry-image-overlay .masonry-text a { color: rgba(255,255,255,1); }
+.masonry-grid-item .masonry-image-overlay .masonry-text a:hover { color: rgba(255,255,255,0.7); }
+.masonry-grid-item:hover .masonry-image-overlay .masonry-overlay-wrap { color: rgba(255,255,255,1); }
+/* menu-toggle */
+.header-wide-no-feature .menu-1-toggle svg path, .header-wide-slider .menu-1-toggle svg path svg path { fill: #f7f7f7; }
+/* classic commerce */
+.menu-item-type-woocommerce-cart a svg path { fill: #f7f7f7; }
+/* ====================== Mobile Styles ============================ 
+ * The styles shown here are essentially a repeat of the skin 
+ * styles, allowing you to easily change the skin.
+ * ================================================================= */
+@media only screen and (max-width:900px) {
+	.menu-item-type-woocommerce-cart a svg path { fill: #474747; }
+}
