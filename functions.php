@@ -18,7 +18,7 @@
  * Author:      Kevin Archibald
  * Author URI:  http://kevinsspace.ca/
  * Template:    canuck-cp
- * Version:     1.0.0
+ * Version:     1.0.1
  */
 
 /**

@@ -8,8 +8,8 @@ Donate: https://canuckdemo.kevinsspace.ca/donate/
 Requires at least: 1.1
 Requires PHP: 5.6
 Tested up to: 1.2
-Version: 1.0.0
-Stable tag: 1.0.0
+Version: 1.0.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI:https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,9 @@ Canuck CP Black is a child theme for the Canuck CP ClassicPres Theme. It require
 * All options for the parent theme will still work with this child theme.
 
 == Changelog ==
+
+= Version 1.0.0 =
+*
 
 = Version 1.0.0 =
 * Initial Release
